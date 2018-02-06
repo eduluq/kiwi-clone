@@ -16,7 +16,7 @@ const initParams = {
   origin: 'Seville',
   destination: 'Bangkok',
   departureDate: '09/06/2018',
-  returnDate: '',
+  returnDate: '19/06/2018',
 }
 
 class App extends Component {

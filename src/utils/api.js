@@ -8,7 +8,7 @@ const PARAM_DATE_FROM = 'dateFrom=';
 const PARAM_DATE_TO = 'dateTo=';
 const PARAM_RETURN_FROM = 'returnFrom=';
 const PARAM_RETURN_TO = 'returnTo=';
-const PARAM_PARTNER = 'partner=picky&partner_market=us';
+const PARAM_PARTNER = 'partner=picky&partner_market=en';
 
 export const getFlightsAPI = (from, to, dateFrom1, dateTo2) => {
 

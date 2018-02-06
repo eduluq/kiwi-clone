@@ -68,7 +68,7 @@ class ResultList extends Component {
 
         {fetching
           ?
-            <div>Loading...</div>
+            <div>Cargando...</div>
           :
           results.length > 0
             ?
@@ -94,7 +94,11 @@ class ResultList extends Component {
                 </ul>
               </div>
             :
-              <div className="message" style={{marginTop: '40px'}}>There is no flight with the indicated parameters</div>
+              <div className="message" style={{marginTop: '40px'}}>
+                No hay resultados para los parámetros indicados. <b>Por favor, tenga
+                en cuenta que los nombres de las ciudades que introduzca deben
+                estar en inglés.</b>
+              </div>
         }
       </div>
 
