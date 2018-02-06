@@ -1,0 +1,20 @@
+.result-list {
+  background-color: #fafbfc;
+  padding: 20px;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+}
+
+.results li {
+  margin-bottom: 15px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,.14);
+}

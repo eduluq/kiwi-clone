@@ -1,0 +1,48 @@
+.filter {
+  background: rgba(233,238,242,.4);
+  padding: 20px;
+  width: 100%;
+  color: #57626c;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,.14);
+}
+
+.filter:hover {
+  background: #fff;
+}
+
+.filter.active {
+  background: #fff;
+}
+
+.filter.active .filter-header {
+  color: #01bba5;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+}
+
+.filter-header__label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-header .fa {
+  font-size: 18px;
+}
+
+.filter-info__price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  margin-right: 10px;
+}
+
+.filter-info__duration {
+  font-size: 14px;
+  font-weight: 400;
+}

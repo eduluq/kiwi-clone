@@ -1,0 +1,74 @@
+.result-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.14);
+  transition: box-shadow .3s ease-out;
+  cursor: pointer;
+  background: white;
+}
+
+.result-card:hover {
+  box-shadow: 0 2px 7px 0 rgba(0,0,0,.32);
+}
+
+.result-card__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e353b;
+}
+
+.result-card__time {
+  font-size: 14px;
+  color: #2e353b;
+}
+
+.result-card__date {
+  font-size: 12px;
+  line-height: 20px;
+  color: #94a2b0;
+}
+
+.result-card__route {
+  font-size: 12px;
+  line-height: 20px;
+  color: #94a2b0;
+}
+
+.result-card__duration {
+  font-size: 14px;
+  color: #2e353b;
+}
+
+.result-card__more {
+  font-size: 24px;
+  color: #94a2b0;
+}
+
+.result-card-extended {
+  display: none;
+  background: white;
+  border-top: 1px solid lightgray;
+  padding: 20px;
+  transition: opacity ease 500ms;
+}
+
+.result-card-extended .button {
+  outline: none;
+  width: 100%;
+  background: #00ccb4;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.result-card-extended.active {
+  display: block;
+}

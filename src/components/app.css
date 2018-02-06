@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  width: 100vw;
+  height: 50px;
+  border: 1px solid white;
+}
+.search-box {
+  grid-area: search-box;
+  width: 50vw;
+  height: 215px;
+  border: 1px solid white;
+}
+.result-list {
+  grid-area: result-list;
+  width: 50vw;
+  height: calc(100vh - 265px);
+  border: 1px solid white;
+  overflow: scroll;
+}
+.map {
+  grid-area: map;
+  width: 50vw;
+  height: calc(100vh - 50px);
+}
+
+.app {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'search-box map'
+    'result-list map';
+  background-color: white;
+}

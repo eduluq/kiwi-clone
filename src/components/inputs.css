@@ -1,0 +1,35 @@
+.input {
+  position: relative;
+  width: 100%;
+}
+
+.input:not(:last-child) {
+  margin-right: 10px;
+}
+
+.input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #57626c;
+}
+
+.input input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  text-indent: 70px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  outline: none;
+}
+
+.input input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 0.15; /* Firefox */
+}
