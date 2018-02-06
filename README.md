@@ -1,4 +1,4 @@
-#kiwi-clone
+# Flight searcher
 
 This is a Mini Kiwi Clone built with React and https://skypickerpublicapi.docs.apiary.io/#.
 
