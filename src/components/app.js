@@ -61,6 +61,7 @@ class App extends Component {
         lngFrom: r.lngFrom,
         latTo: r.latTo,
         lngTo: r.lngTo,
+        returnFlight: r.return,
       }));
       selectedFlight = id;
     }
@@ -79,6 +80,7 @@ class App extends Component {
     getFlightsAPI(initParams.origin, initParams.destination,initParams.departureDate, initParams.returnDate)
       .then(results => {
         this.setState({ results, fetching: false });
+        console.log(results)
       })
       .catch(error => {
         this.setState({ fetching: false });

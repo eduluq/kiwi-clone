@@ -10,10 +10,10 @@ import Marker from './marker';
 const Map = ({ route }) => {
 
   const markers = [].concat(...route.map(r => {
-    const { id, cityFrom, cityTo, latFrom, lngFrom, latTo, lngTo } = r;
+    const { id, cityFrom, cityTo, latFrom, lngFrom, latTo, lngTo, returnFlight } = r;
     return([
-      <Marker key={`${id}${cityFrom}`} lat={latFrom} lng={lngFrom} label={cityFrom} />,
-      <Marker key={`${id}${cityTo}`} lat={latTo} lng={lngTo} label={cityTo} />,
+      <Marker key={`${id}${cityFrom}`} lat={latFrom} lng={lngFrom} label={cityFrom} returnFlight={returnFlight}/>,
+      <Marker key={`${id}${cityTo}`} lat={latTo} lng={lngTo} label={cityTo} returnFlight={returnFlight}/>,
     ]);
   }));
 
