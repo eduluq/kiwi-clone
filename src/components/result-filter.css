@@ -5,6 +5,9 @@
   color: #57626c;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0,0,0,.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .filter:hover {
@@ -45,4 +48,10 @@
 .filter-info__duration {
   font-size: 14px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 500px) {
+  .filter {
+    display: none;
+  }
 }

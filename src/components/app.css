@@ -6,19 +6,16 @@
   grid-area: header;
   width: 100vw;
   height: 50px;
-  border: 1px solid white;
 }
 .search-box {
   grid-area: search-box;
   width: 50vw;
   height: 215px;
-  border: 1px solid white;
 }
 .result-list {
   grid-area: result-list;
   width: 50vw;
   height: calc(100vh - 265px);
-  border: 1px solid white;
   overflow: scroll;
 }
 .map {
@@ -37,4 +34,37 @@
     'search-box map'
     'result-list map';
   background-color: white;
+}
+
+@media only screen and (max-width: 1012px) {
+  .search-box {
+    width: 60vw;
+  }
+  .result-list {
+    width: 60vw;
+  }
+  .map {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .search-box {
+    width: 100vw;
+  }
+  .result-list {
+    width: 100vw;
+  }
+  .map {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .search-box {
+    height: 335px;
+  }
+  .result-list {
+    height: calc(100vh - 335px);
+  }
 }

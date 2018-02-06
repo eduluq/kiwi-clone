@@ -74,9 +74,9 @@ class ResultList extends Component {
             ?
               <div>
                 <div className="filters">
-                  <ResultFilter className={this.calcFilterClass('recommended')} onClick={() => this.setFilter('recommended')} label="Recomendado" icon="thumbs-up" price={cheapestFlight.price} duration={cheapestFlight.duration}/>
-                  <ResultFilter className={this.calcFilterClass('cheapest')} onClick={() => this.setFilter('cheapest')} label="Mejor precio" icon="usd" price={cheapestFlight.price} duration={cheapestFlight.duration}/>
-                  <ResultFilter className={this.calcFilterClass('shortest')} onClick={() => this.setFilter('shortest')} label="Menor duración" icon="clock-o" price={shortestFlight.price} duration={shortestFlight.duration}/>
+                  <ResultFilter className={this.calcFilterClass('recommended')} onClick={() => this.setFilter('recommended')} label="Recomendado " icon="thumbs-up" price={cheapestFlight.price} duration={cheapestFlight.duration}/>
+                  <ResultFilter className={this.calcFilterClass('cheapest')} onClick={() => this.setFilter('cheapest')} label="Mejor precio " icon="usd" price={cheapestFlight.price} duration={cheapestFlight.duration}/>
+                  <ResultFilter className={this.calcFilterClass('shortest')} onClick={() => this.setFilter('shortest')} label="Menor duración " icon="clock-o" price={shortestFlight.price} duration={shortestFlight.duration}/>
                 </div>
                 <ul className="results">
                   {filteredResults.map(result => {

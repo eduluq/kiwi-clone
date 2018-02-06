@@ -1,6 +1,6 @@
 .search-box {
   padding: 20px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .search-box__form {
@@ -44,4 +44,17 @@
 
 .search-box__submit:hover {
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 500px) {
+  .search-box__form__group {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .search-box__form__group .input {
+    margin-bottom: -1px;
+  }
+  .search-box__submit {
+    width: 100%;
+  }
 }

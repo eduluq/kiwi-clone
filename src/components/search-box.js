@@ -27,7 +27,7 @@ class SearchBox extends Component {
   }
 
   onClick(option) {
-    this.setState({ mode: option });
+    this.setState({ mode: option, returnDate: '' });
   }
 
   onInputChange(event) {
@@ -35,6 +35,10 @@ class SearchBox extends Component {
     this.setState({
       [name]: value,
     });
+    //If user writes on return date, it changes to round trip mode,
+    //if return date is empty, it changes to one way mode.
+    const mode = value === '' ? 'one way' : 'round trip';
+    this.setState({ mode: mode });
   }
 
   render() {
@@ -43,7 +47,6 @@ class SearchBox extends Component {
     const { mode, origin, destination, departureDate, returnDate } = this.state;
 
     const returnDatePlaceholder = this.state.mode === 'one way' ? 'Sin regreso' : '09/09/2018';
-    const returnDateDisabled = this.state.mode === 'one way' ? true : false;
 
     return(
       <div className="search-box">
@@ -81,7 +84,6 @@ class SearchBox extends Component {
               placeholder="lun. 29/01 - mier. 28/02"
               value={this.state.departureDate}
               onChange={this.onInputChange}
-              disabled={false}
             />
             <DateInput
               name="returnDate"
@@ -89,7 +91,6 @@ class SearchBox extends Component {
               placeholder={returnDatePlaceholder}
               value={this.state.returnDate}
               onChange={this.onInputChange}
-              disabled={returnDateDisabled}
             />
           </div>
           <button

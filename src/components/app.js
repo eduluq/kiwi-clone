@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //import utils
-import { getFlightsAPI, getPlacesAPI } from '../utils/api';
+import { getFlightsAPI } from '../utils/api';
 
 //import styles
 import './app.css';
@@ -71,8 +71,6 @@ class App extends Component {
       selectedRoute: airports
     });
 
-    console.log(id)
-
   }
 
   componentDidMount() {
@@ -80,7 +78,6 @@ class App extends Component {
     getFlightsAPI(initParams.origin, initParams.destination,initParams.departureDate, initParams.returnDate)
       .then(results => {
         this.setState({ results, fetching: false });
-        console.log(results)
       })
       .catch(error => {
         this.setState({ fetching: false });

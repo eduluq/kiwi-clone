@@ -9,8 +9,6 @@ const Header = () => (
     <ul className="header__menu">
       <li>Español</li>
       <li>EUR - €</li>
-      <li>Ayuda</li>
-      <li>Gestionar mi reserva</li>
     </ul>
   </div>
 );

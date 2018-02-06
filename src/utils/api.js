@@ -23,7 +23,6 @@ export const getFlightsAPI = (from, to, dateFrom1, dateTo2) => {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        //console.log(data.data);
         const results = data.data.map((d => {
 
           //Split flights between departure and return trips
@@ -83,7 +82,6 @@ export const getFlightsAPI = (from, to, dateFrom1, dateTo2) => {
           })
 
         }));
-        console.log(results)
         resolve(results);
       })
       .catch(error => {

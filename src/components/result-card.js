@@ -18,7 +18,7 @@ class ResultCard extends Component {
   }
 
   render() {
-    const { id, price, link, depatureRoute, returnRoute } = this.props.result;
+    const { price, link, depatureRoute, returnRoute } = this.props.result;
     const { isSelected } = this.props;
 
     //if returnRoute === null, it's a one way trip
