@@ -5,4 +5,4 @@ This is a Mini [Kiwi](https://www.kiwi.com/en/) Clone built with React and https
 It’s responsive but it's not optimize for mobile devices.
 
 ## Demo
-eduluq-kiwi.surge.sh
+http://eduluq-kiwi.surge.sh
